@@ -1,6 +1,14 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 3030;
+
 const helmet = require('helmet');
+
+
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
+
 
 
 
